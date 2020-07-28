@@ -5,29 +5,30 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Product from "./Product";
 
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        marginTop: theme.spacing(6),
     },
-    paper: {
-        padding: theme.spacing(2),
-        margin: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
+    // paper: {
+    //     padding: theme.spacing(2),
+    //     margin: theme.spacing(2),
+    //     textAlign: 'center',
+    //     color: theme.palette.text.secondary,
+    //     backgroundColor:'blue'
+    // },
     media: {
         height: 120,
         paddingTop: '56.25%', // 16:9
     },
 }));
 
+
 const HomeProducts = () => {
     const classes = useStyles();
 
     return (
-        // <>
-        //   <Product />  
-        // </>
         <React.Fragment>
             {/* <CssBaseline /> */}
             <Container maxWidth="lg">
